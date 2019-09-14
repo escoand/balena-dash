@@ -1,6 +1,6 @@
 FROM balenalib/raspberrypi3-alpine
 
-RUN apk --no-cache add libcec
+RUN apk --no-cache add libcec raspberrypi
 
 COPY scripts /usr/src/
 RUN chmod +x /usr/src/*.sh
