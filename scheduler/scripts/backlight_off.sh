@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output=$(tvservice -s)
+output=$(/opt/vc/bin/tvservice -s)
 
 if [[ $output =~ "0x400000 [LCD]" ]]; then
   echo -n 1 > /sys/class/backlight/rpi_backlight/bl_power
